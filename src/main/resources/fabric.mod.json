@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "edcraft",
+	"version": "${version}",
+	"name": "EDCraft",
+	"description": "Electronic Digital Circuits in Minecraft. Create your own circuits and automate your world while learning about digital electronics.",
+	"authors": [
+		"Josdelsan"
+	],
+	"contact": {
+		"homepage": "https://github.com/Josdelsan",
+		"sources": "https://github.com/Josdelsan"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/edcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.edcraft.EDCraft"
+		],
+		"client": [
+			"com.edcraft.EDCraftClient"
+		]
+	},
+	"mixins": [
+		"edcraft.mixins.json",
+		{
+			"config": "modid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

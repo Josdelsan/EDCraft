@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "edcraft:block/gate_not"},
+    "facing=east": { "model": "edcraft:block/gate_not", "y": 90},
+    "facing=south": { "model": "edcraft:block/gate_not", "y": 180},
+    "facing=west": { "model": "edcraft:block/gate_not", "y": 270}
+  }
+}
