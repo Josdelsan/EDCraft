@@ -14,8 +14,6 @@ public class EDCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
-
 		ModBlocks.initialize();
 	}
 }
